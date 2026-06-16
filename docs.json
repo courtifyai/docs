@@ -1,53 +1,100 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "CourtifyAI",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#EA580C",
+    "light": "#FB923C",
+    "dark": "#C2410C"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "language": "en",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "en/introduction",
+              "en/quickstart",
+              "en/signing-in"
+            ]
+          },
+          {
+            "group": "Working with tasks",
+            "pages": [
+              "en/tasks",
+              "en/knowledge-base",
+              "en/triggers",
+              "en/space"
+            ]
+          },
+          {
+            "group": "Connect and collaborate",
+            "pages": [
+              "en/connectors",
+              "en/zones"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "en/credits-billing",
+              "en/personalization",
+              "en/api-keys"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "zh",
+        "groups": [
+          {
+            "group": "开始使用",
+            "pages": [
+              "zh/introduction",
+              "zh/quickstart",
+              "zh/signing-in"
+            ]
+          },
+          {
+            "group": "使用任务",
+            "pages": [
+              "zh/tasks",
+              "zh/knowledge-base",
+              "zh/triggers",
+              "zh/space"
+            ]
+          },
+          {
+            "group": "连接与协作",
+            "pages": [
+              "zh/connectors",
+              "zh/zones"
+            ]
+          },
+          {
+            "group": "账户",
+            "pages": [
+              "zh/credits-billing",
+              "zh/personalization",
+              "zh/api-keys"
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open CourtifyAI",
+      "href": "https://gaval.autopilot.law"
     }
   },
   "contextual": {
@@ -55,18 +102,20 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "links": [
+      {
+        "header": "CourtifyAI",
+        "items": [
+          {
+            "label": "Open app",
+            "href": "https://gaval.autopilot.law"
+          }
+        ]
+      }
+    ]
   }
 }

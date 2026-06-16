@@ -1,0 +1,53 @@
+---
+title: "Triggers"
+description: "Run a Worker automatically on a schedule or when an event happens."
+---
+
+Triggers automate work. Instead of starting a task by hand, you set a trigger that runs a Worker on a schedule or in response to an event, and you get the result when it completes.
+
+<Frame caption="Your triggers">
+  <img src="/images/triggers-en.png" alt="List of triggers" />
+</Frame>
+
+## Trigger types
+
+<CardGroup cols={2}>
+  <Card title="Scheduled trigger" icon="clock">
+    Run a Worker at a specific time, once or on a repeating schedule.
+  </Card>
+  <Card title="Event-based trigger" icon="bolt">
+    Run a Worker when an event occurs.
+  </Card>
+</CardGroup>
+
+## Add a trigger
+
+<Steps>
+  <Step title="Open triggers and add one">
+    Go to **Triggers** and select **Add Trigger**, then choose a scheduled or event-based trigger.
+  </Step>
+  <Step title="Choose the Worker">
+    Pick the Worker that should run.
+  </Step>
+  <Step title="Set the schedule">
+    For a scheduled trigger, choose when it runs and whether it repeats.
+  </Step>
+  <Step title="Add instructions">
+    Write the prompt the Worker should follow each time the trigger fires.
+  </Step>
+</Steps>
+
+<Frame caption="Configuring a scheduled trigger">
+  <img src="/images/placeholder.svg" alt="Trigger configuration screen" />
+</Frame>
+{/* TODO: Replace with a screenshot of the trigger configuration screen */}
+
+## Manage triggers
+
+- **Enable or disable** — turn a trigger on or off without deleting it.
+- **Edit** — update the schedule, the Worker, or the instructions.
+- **Delete** — remove a trigger. This stops all of its automated runs and cannot be undone.
+
+<Note>
+  Disabling a trigger keeps its configuration so you can turn it back on later. Deleting a trigger removes it permanently.
+</Note>

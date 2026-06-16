@@ -1,0 +1,34 @@
+---
+title: "Connectors"
+description: "Securely store third-party credentials that Workers use while running tasks."
+---
+
+Connectors securely store credentials for third-party platforms. Once a credential is saved, it is automatically supplied to the Worker when it runs a task that needs that platform, so you do not have to paste keys into a task.
+
+<Frame caption="Configured connectors">
+  <img src="/images/connectors-en.png" alt="Connectors screen with platform credentials" />
+</Frame>
+
+## Configure a connector
+
+<Steps>
+  <Step title="Open connectors">
+    Go to the **Connector** section in your account.
+  </Step>
+  <Step title="Pick a platform">
+    Choose a platform from the recommended list, for example CourtListener for US case law and court document search.
+  </Step>
+  <Step title="Enter the credential">
+    Paste the API token or key for that platform and save it. The status changes to **Configured**.
+  </Step>
+</Steps>
+
+You can update a saved credential at any time, or delete it to stop supplying it to Workers.
+
+## Security
+
+Credentials are encrypted at rest with AES-256-GCM, with keys protected by RSA public-key encryption, and protected by TLS in transit.
+
+<Note>
+  Only store credentials for platforms you want Workers to use on your behalf. Delete a connector when you no longer need it.
+</Note>

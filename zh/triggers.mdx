@@ -1,0 +1,54 @@
+---
+title: "触发器"
+description: "按计划或在事件发生时自动运行 Worker。"
+---
+
+触发器用于自动化工作。无需手动开始任务，你可以设置触发器，让 Worker 按计划或响应事件运行，完成后再获取结果。
+
+<Frame caption="你的触发器">
+  <img src="/images/triggers-zh.png" alt="触发器列表" />
+</Frame>
+{/* TODO: 替换为触发器列表的截图 */}
+
+## 触发器类型
+
+<CardGroup cols={2}>
+  <Card title="计划触发器" icon="clock">
+    在指定时间运行 Worker，可一次性或按重复计划运行。
+  </Card>
+  <Card title="基于事件的触发器" icon="bolt">
+    在事件发生时运行 Worker。
+  </Card>
+</CardGroup>
+
+## 添加触发器
+
+<Steps>
+  <Step title="打开触发器并添加">
+    进入**触发器**，选择**添加触发器**，然后选择计划触发器或基于事件的触发器。
+  </Step>
+  <Step title="选择 Worker">
+    选择要运行的 Worker。
+  </Step>
+  <Step title="设置计划">
+    对于计划触发器，选择运行时间以及是否重复。
+  </Step>
+  <Step title="添加指令">
+    编写每次触发时 Worker 应遵循的提示。
+  </Step>
+</Steps>
+
+<Frame caption="配置计划触发器">
+  <img src="/images/placeholder.svg" alt="触发器配置界面" />
+</Frame>
+{/* TODO: 替换为触发器配置界面的截图 */}
+
+## 管理触发器
+
+- **启用或禁用** — 在不删除的情况下开启或关闭触发器。
+- **编辑** — 更新计划、Worker 或指令。
+- **删除** — 移除触发器。这会停止它的所有自动运行，且无法撤销。
+
+<Note>
+  禁用触发器会保留它的配置，方便日后重新开启。删除触发器则会永久移除。
+</Note>
